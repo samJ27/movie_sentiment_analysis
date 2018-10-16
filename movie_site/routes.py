@@ -4,14 +4,7 @@ import numpy as np
 import re
 import os
 import pickle
-from movie_classifier import vect
-
-# Unpickle the classifier
-cur_dir = os.path.dirname(__file__)
-clf = pickle.load(open(
-    os.path.join(cur_dir,
-                 'pkl_objects',
-                 'classifier.pkl'), 'rb'))
+from vectorizer import vect
 
 
 @app.route("/")
@@ -22,6 +15,13 @@ def home():
 
 @app.route("/home", methods=['POST'])
 def predict():
+
+    # Unpickle the classifier
+    cur_dir = os.path.dirname(__file__)
+    clf = pickle.load(open(
+        os.path.join(cur_dir,
+                     'pkl_objects',
+                     'classifier.pkl'), 'rb'))
     if request.method == 'POST':
         # Label to display
         label = {0: 'Negative', 1: 'Positive'}
