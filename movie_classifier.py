@@ -4,6 +4,7 @@
 import numpy as np
 import re
 import nltk
+nltk.download('stopwords')
 import pickle
 import os
 from nltk.corpus import stopwords
