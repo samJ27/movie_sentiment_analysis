@@ -2,7 +2,8 @@
 {% block content %}
     <div class="ml-container">
         <p>Machine learning sentiment analysis using SGD with a tokeniser. The data used for learning was the<a class="nav-item nav-link"
-            href="http://ai.stanford.edu/~amaas/data/sentiment/">IMDB Movie Review Dataset</a>
+            href="http://ai.stanford.edu/~amaas/data/sentiment/">IMDB Movie Review Dataset</a> The result will tell you whether the text
+            input had a positive sentiment or a negative sentiment!
         </p>
         <form action="{{ url_for('predict')}}" method="POST">
             <p>Enter Your Review Here:</p>

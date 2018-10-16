@@ -1,11 +1,3 @@
-# Sebastian Raschka, 2015 (http://sebastianraschka.com)
-# Python Machine Learning - Code Examples
-#
-# Chapter 8 - Applying Machine Learning To Sentiment Analysis
-#
-# S. Raschka. Python Machine Learning. Packt Publishing Ltd., 2015.
-# GitHub Repo: https://github.com/rasbt/python-machine-learning-book
-#
 # License: MIT
 # https://github.com/rasbt/python-machine-learning-book/blob/master/LICENSE.txt
 
