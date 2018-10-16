@@ -4,10 +4,14 @@ import numpy as np
 import re
 import os
 import pickle
-from movie_classifier import get_minibatch, vect
+from movie_classifier import vect
 
 # Unpickle the classifier
-clf = pickle.load(open('movieclassifier/pkl_objects/classifier.pkl', 'rb'))
+cur_dir = os.path.dirname(__file__)
+clf = pickle.load(open(
+    os.path.join(cur_dir,
+                 'pkl_objects',
+                 'classifier.pkl'), 'rb'))
 
 
 @app.route("/")
