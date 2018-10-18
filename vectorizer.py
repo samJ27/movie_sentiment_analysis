@@ -2,7 +2,9 @@ from sklearn.feature_extraction.text import HashingVectorizer
 import re
 import os
 import pickle
-
+"""
+vectorizer.py imports the vectorizer into the existing session, enabling it's use in the web app. 
+"""
 cur_dir = os.path.dirname(__file__)
 stop = pickle.load(open(
     os.path.join(cur_dir, 'movie_site',
